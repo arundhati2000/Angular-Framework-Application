@@ -1,1 +1,82 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '~@angular/material' as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+
+$mat-theming-primary: mat.define-palette(mat.$teal-palette,800);
+$mat-theming-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+
+$mat-theming-warn: mat.define-palette(mat.$red-palette);
+
+
+$mat-theming-theme: mat.define-light-theme((
+  color: (
+    primary: $mat-theming-primary,
+    accent: $mat-theming-accent,
+    warn: $mat-theming-warn,
+  )
+));
+
+
+$mat-theming-dark-theme: mat.define-dark-theme((
+  color: (
+    primary: $mat-theming-primary,
+    accent: $mat-theming-accent,
+    warn: $mat-theming-warn,
+  )
+));
+
+.dark-theme{
+  @include mat.all-component-themes($mat-theming-dark-theme);
+}
+@include mat.all-component-themes($mat-theming-theme);
+
+
+
+
+
+
+
+
+
+
+
+@import '~@angular/material/theming';
+
+@mixin mat-ripple-theme($theme) {
+  .mat-ripple-element {
+    background-color: #066;
+  }
+}
+
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
+.light-theme {
+  --background-color: #f5f5f5;
+  --text-color: #1a1a1a;
+  --box-color: #fff;
+  --button-color: #fff;
+--col:#fff;
+  --box-shadow: 0 15px 25px rgba(0, 0, 0, .1);
+}
+
+.dark-theme {
+  --background-color: #1a1a1a;
+  --text-color: #f5f5f5;
+  --box-color: #2b2b2b;
+  --button-color: #1a1a1a;
+  --col:#1a1a1a;
+}

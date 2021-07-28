@@ -1,0 +1,264 @@
+body {
+    background-color: #e7e7e7;
+    height: 100vh;
+    width: 100vw;
+   
+    position: absolute;
+  
+    display: flex;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+    /* justify-content: space-around; */
+    
+  }
+
+
+ 
+
+
+  html{
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  
+  .main {
+    display: flex;
+        // border: 1px solid blue; 
+   
+    // height: 100vh;
+    margin-left: 9em;
+    width: 75%;
+  
+    margin: auto;
+    margin-top: 2%;
+    overflow-x: hidden;
+    
+   
+  }
+  .protude {
+    margin-top: -16.5em;
+    margin-left: 1em;
+    /* border: 1px solid black; */
+    /* width: 100%;
+        margin-right:3em ; */
+  }
+  .sideCut{
+    width:fit-content;
+    // border: 1px solid green;
+    position: absolute;
+   margin-left: 6.7em;
+   margin-top: 1.33em;
+   height: 90.3%;
+    
+  }
+  
+  mat-sidenav-container{
+    /* box-shadow: 0 5px 5px 3px rgb(207, 204, 204); */
+    /* box-shadow: 0 5px 5px 3px rgb(207, 204, 204), 0 5px 5px 3px rgb(207, 204, 204); */
+    width: 20%;
+ 
+   
+  
+    background-color: #66b2b2;
+  
+    border: none;
+    flex-direction: column;
+    // height:90%;
+    
+   
+    
+    // border:1px solid black; 
+  }
+  .side{
+    overflow-x: hidden;
+    // border: 1px solid green;
+  }
+  .demo {
+    /* border:1px solid magenta; */
+    /* position: relative; */
+    /* margin-top: 2em; */
+    height: 30%;
+  }
+  .arrowBox {
+    position: relative;
+    // margin: 0.5em;
+    // margin-left: 2em;
+    cursor: pointer;
+    top:1em;
+    margin: auto;
+    margin-left: 40%;
+  }
+  
+  .blockCircle{
+    /* border: 1px solid black; */
+    height: 40%;
+  }
+  
+  .demo1 {
+    /* border:1px solid black; */
+    /* margin-top: 21.5em; */
+    position: relative;
+    height: 30%;
+  }
+  
+  .arrowBox1 {
+    position: relative;
+    // margin: 0.5em;
+    // margin-left: 2em;
+    cursor: pointer;
+    top:4.5em;
+    margin-left: 40%;
+    margin-top: 1em;
+  }
+
+
+  .example-margin{
+    position: absolute;
+    margin-left: 0.5em;
+  }
+  
+   .content {
+    position: relative;
+    width: 80%;
+    max-width: 980px;
+  
+    background-color: #fff;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+   
+    box-shadow: 0 0 5px 3px rgb(207, 204, 204);
+    box-shadow: 5px 0 5px 3px rgb(207, 204, 204);
+    // height: 90%;
+    // border: 1px solid magenta;
+   
+    
+  
+    
+    overflow-y: hidden;
+    overflow-x: hidden;
+  } 
+  
+  
+  /* .mb-dots{
+    border:1px solid yellow;
+  
+  } */
+  .active[_ngcontent-xcp-c43] {
+    background-color: #fff;
+  }
+  .dot-cont[_ngcontent-xcp-c43] {
+    position: relative;
+    border-radius: 100px;
+    transition: .2s;
+    /* s */
+    top:40%;
+    
+  }
+  
+  
+  .side-menu[_ngcontent-xcp-c43] div[_ngcontent-xcp-c43] {
+    margin: auto;
+    color: #fff;
+  }
+  
+  .inactive[_ngcontent-xcp-c43] {
+    background-color: #e7e7e7;
+  }
+  
+  .circle[_ngcontent-xcp-c43] {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    /* background-color: #fff; */
+    border-radius: 50%;
+    /* border: 1px solid blue; */
+    margin-left:47%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  @media only screen and (max-width: 40em) {
+    body {
+      background-color: palevioletred;
+    }
+    .main{
+      flex-direction: column;
+      border: 1px solid green;
+    }
+   
+     
+    .content{
+      height: 80%;
+    }
+
+.side{
+  
+}
+    // .arrowBox,
+    // .arrowBox1{
+    //   margin: 0;
+    //   transform: rotate(-90deg);
+    //   padding: 0;
+    // }
+    
+
+
+//    .arrowBox1{
+//      margin-left: 85%;
+//  top:-3em ;
+//  bottom: 0;
+//    }
+
+
+   .content{
+     width: 100%;
+     
+   }
+
+  }
+  
+  
+ 

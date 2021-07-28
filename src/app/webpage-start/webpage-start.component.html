@@ -1,0 +1,254 @@
+<!-- classes main and container gone for now -->
+
+
+<div class="main mat-app-background">
+
+    <div class="first-container ">
+
+        <div class="heading">
+
+            <h1 class="common-margin title">About Startup</h1>
+        </div>
+
+
+
+
+        <div class="logo">
+            <div class="real-img">
+                <img src="assets/Incubator.png" alt="" class="image-resize">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="second-box second-container">
+        <form #userForm="ngForm">
+            <div class="second-container">
+
+                <div>
+                    <div class="second-container">
+
+                        <mat-label for="fname" class="input-label custom-field two"> STARTUP NAME<span
+                                class="red">*</span>
+                            <mat-form-field class="width">
+
+                                <input type="email" matInput [formControl]="emailFormControl" placeholder=""
+                                    class=label-class>
+
+                            </mat-form-field>
+                        </mat-label>
+
+
+
+
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="custom-select">
+                    <div class="industry">
+                        <mat-label for="fname" class="input-label custom-field two"> STATE<span class="red">*</span>
+                            <mat-form-field class="width">
+
+                                <mat-select [formControl]="animalControl" required name="state" ngModel>
+                                    <mat-option>--</mat-option>
+                                    <mat-option *ngFor="let animal of animals" [value]="animal">
+                                        {{animal}}
+                                    </mat-option>
+                                </mat-select>
+
+                            </mat-form-field>
+                        </mat-label>
+
+
+
+                    </div>
+
+
+
+
+
+                    <div class="sector">
+                        <mat-label for="fname" class="input-label custom-field two"> CITY<span class="red">*</span>
+                            <mat-form-field class="width">
+
+                                <mat-select [formControl]="animaloneControl" required name="city" ngModel>
+                                    <mat-option>--</mat-option>
+                                    <mat-option *ngFor="let animal of animals" [value]="animal">
+                                        {{animal}}
+                                    </mat-option>
+                                </mat-select>
+
+                            </mat-form-field>
+                        </mat-label>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+
+    <div class="third-container">
+        <div class="left">
+            <label class="stage"> STAGE<span class="red">*</span></label>
+            <div class="buttons">
+
+
+
+
+                <mat-button-toggle-group [formControl]="fontStyleControl" aria-label="Font Style"
+                    class="mat-app-background">
+                    <mat-button-toggle value="bold">Ideation</mat-button-toggle>
+                    <mat-button-toggle value="italic">Validation</mat-button-toggle>
+                    <mat-button-toggle value="underline">Early Traction</mat-button-toggle>
+                    <mat-button-toggle value="underline">Scaling</mat-button-toggle>
+                </mat-button-toggle-group>
+
+
+            </div>
+            <div class="slide-box">
+                <div class="small-box">
+                    <button class="common bootstrapped">
+                        BOOTSTRAPPED
+                    </button>
+                    <button class="common funded">
+                        FUNDED
+                    </button>
+                </div>
+            </div>
+
+            <div class="interest-logo">
+
+                <div class="interest">
+                    <label class="input-label">INTEREST<span class="red"> * </span></label>
+
+
+                    <mat-radio-group [color]="color" aria-labelledby="example-radio-group-label"
+                        class="example-radio-group" [(ngModel)]="favoriteSeason">
+                        <mat-radio-button class="example-radio-button" *ngFor="let season of seasons" [value]="season">
+                            {{season}}
+                        </mat-radio-button>
+                    </mat-radio-group>
+
+
+
+
+                </div>
+
+
+                <div class="logo-bottom">
+                    <label class="input-label">LOGO:</label>
+                    <div class="originalBox" onmouseover="mouseOver()">
+                        <label id="img_upload" for="logoinput" class="logo-box" style="cursor:pointer;"
+                            (click)="Upload()">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180">
+                                <defs>
+                                    <style>
+                                        .cls-1 {
+                                            fill: none;
+                                            stroke: #707070;
+                                            stroke-dasharray: 10;
+                                        }
+
+                                        .cls-2 {
+                                            fill: #fff;
+                                            stroke: #b0adad;
+                                            stroke-linecap: round;
+                                            stroke-width: 3px;
+                                        }
+                                    </style>
+                                </defs>
+                                <title>Asset 2</title>
+                                <g id="Layer_2" data-name="Layer 2">
+                                    <g id="Layer_1-2" data-name="Layer 1">
+                                        <g id="Group_313" data-name="Group 313">
+                                            <g id="Rectangle_537-2" data-name="Rectangle 537-2">
+                                                <rect class="cls-1" x="0.5" y="0.5" width="319" height="179" rx="9.5" />
+                                            </g>
+                                        </g>
+                                        <g id="Group_312" data-name="Group 312">
+                                            <path id="Path_1488" data-name="Path 1488" class="cls-2"
+                                                d="M192.75,87.39h-65" />
+                                            <path id="Path_1490" data-name="Path 1490" class="cls-2" d="M160,57v65" />
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                            <div class="hiddenText" id="disp">
+                                <span style="padding: 0; font-size: 12px; margin: 0; margin-left: 0;">
+                                    Allowed extensions jpeg,ong,svg,ico,jpg
+
+                                    <br>
+                                    Maximum File Size: 2MB
+                                </span>
+
+                            </div>
+
+                            <!-- <img src="src\assets\Data_files\upload2.png" alt="Wait"> -->
+
+                        </label>
+                        <input class="file_upload" type="file" id="logoinput" accept=".png,.jpeg,.svg,.ico,.jpg"
+                            style="display:none;">
+
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        <div class="right">
+
+            <label class="aboutstartup"> ABOUT STARTUP<span class="red">*</span></label>
+            <div class="textBox">
+                <textarea name="" id="" rows="15" [(ngModel)]=info></textarea>
+
+                <div style="text-align:right;" class="text">{{(count)-info.length}}</div>
+
+
+
+
+
+            </div>
+
+            <button type="button" class="buton " routerLink="contact">Continue <span class="material-icons"
+                    style="vertical-align:middle;"></span>
+
+            </button>
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- 
+</body> -->
